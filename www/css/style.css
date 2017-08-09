@@ -1,0 +1,63 @@
+/* Empty. Add your own CSS if you like */
+/* Empty. Add your own CSS if you like */
+p{
+  text-align: center;
+}
+
+button
+{
+padding: 100px;
+}
+
+
+.error{
+color: red;
+}
+
+#logout?{
+	width: 20%;
+	height: 50%;
+	min-height: 0 !important;
+    top: 20%;
+    bottom: 20%;
+    right: 10%;
+    left: 40%;
+    background-color: #ffffff;
+}
+
+.prof1{
+	padding-right: 50px;
+	padding-left: 50px;
+	padding-bottom: 10px;
+	text-align: left;
+	text-decoration: underline;
+	line-height: 10px;
+
+}
+.prof2{
+	padding-right: 50px;
+	float: right;
+	padding-top: 15px;
+	font-size:150px;
+	text-align: right;
+}
+
+
+
+.postImg{
+	width: 100px;
+	height: auto;
+}
+
+.postTitle{
+	padding-top: 5px;
+	text-align: center;
+	line-height: 100%;
+
+}
+.postDate{
+	text-align: left;
+}
+.postUser{
+	
+}

@@ -1,0 +1,21 @@
+<ion-modal-view id="edit">
+        <ion-header-bar class="bar bar-header bar-positive">
+          <h1 class="title">Edit</h1>
+          <button class="button button-clear button-primary" ng-click="modal.hide()">Cancel</button>
+        </ion-header-bar>
+        <ion-content class="padding">
+  			<form>
+
+  		<p ng-bind="editVar" name="editVar"></p>
+      <label class="item item-input">
+        <input name="inp" ng-model="inp" required>
+      </label>
+      
+      <button class="button button-positive  button-block" ng-click="edit(inp)">Save</button>
+     
+  </form>
+
+
+          
+        </ion-content>
+      </ion-modal-view>

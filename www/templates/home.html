@@ -1,0 +1,34 @@
+<ion-view title="Home" style="" ng-init="load()">
+<ion-nav-buttons side="right">
+        <p name="user" ng-bind="user"></p>
+</ion-nav-buttons>
+  <ion-content padding="true" class="has-header">
+
+ 
+   	<button class="button button-positive ion-compose" ng-click="postPopup()">Create Post</button>
+
+   	
+     
+   	<div class="list card" ng-repeat="post in postList">
+
+      <div class="item item-avatar">
+    <img ng-src="{{post.profile}}">
+    <h2 class="postUser">{{post.user}}</h2>
+    <p class="postDate">{{post.date}}</p>
+  </div>
+
+
+    
+  <div class="item item-image">
+    <img class="postImg" ng-src="{{post.photo}}">
+  </div>
+
+  	 <p class="postTitle">{{post.title}}</p>
+	  
+
+	</div>
+
+   
+   
+  </ion-content>
+</ion-view>

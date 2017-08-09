@@ -1,0 +1,28 @@
+<ion-view title="Welcome" style="">
+  <ion-content padding="true" class="has-header">
+
+    <form name="loginForm" class="list" novalidate>
+
+      <label class="item item-input">
+        <input placeholder="Email" name="email" type="email" ng-model="email" required>
+      </label>
+      <p class="error" ng-show="e" name="errorE" ng-bind="errorE"></p>
+
+      <label class="item item-input" name="password">
+        <input placeholder="Password" type="password" name="password" ng-model="password" required>
+      </label>
+      <p class="error" ng-show="p" name="errorP" ng-bind="errorP"></p>
+      <button class="button button-positive  button-block" ng-click="welcome(loginForm, email, password, 1)">Login</button>
+      <p class="error" ng-show="l" name="errorL" ng-bind="errorL"></p>
+      <button class="button button-positive  button-block" ng-click="welcome(loginForm, email, password, 2)">Sign up!</button>
+      <p class="error" ng-show="r" name="errorR" ng-bind="errorR"></p>
+  </form>
+
+
+  <div ng-repeat="x in list">
+    <p>{{x.name}}</p>
+    <img ng-src="{{x.image}}">
+  </div>
+
+  </ion-content>
+</ion-view>
